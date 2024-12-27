@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities - Braegen Monitor</title>
+    <link rel="stylesheet" href="activities.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/BraegenMonitorLogo.png" alt="Braegen Monitor Logo" class="logo-img">
+            <span>Braegen Monitor</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="appointment.html">Appointment</a></li>
+            <li><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <div class="container">
+            <h3>Activities for Your Child</h3>
+            <div class="activity-list">
+                <div class="activity-card">
+                    <img src="images/TherapeuticExercise.jpg" alt="Therapeutic Exercise">
+                    <h4>Therapeutic Exercise</h4>
+                    <p>Engage in simple physical exercises to improve motor skills.</p>
+                    <button class="btn-start" onclick="startActivity('Therapeutic Exercise')">Start</button>
+                </div>
+
+                <div class="activity-card">
+                    <img src="images/MindfulnessMeditation.avif" alt="Mindfulness Meditation">
+                    <h4>Mindfulness Meditation</h4>
+                    <p>Help your child relax with guided meditation sessions.</p>
+                    <button class="btn-start" onclick="startActivity('Mindfulness Meditation')">Start</button>
+                </div>
+
+                <div class="activity-card">
+                    <img src="images/SensoryGames.avif" alt="Sensory Games">
+                    <h4>Sensory Games</h4>
+                    <p>Interactive games that help with sensory development.</p>
+                    <button class="btn-start" onclick="startActivity('Sensory Games')">Start</button>
+                </div>
+
+                <div class="activity-card">
+                    <img src="images/CognitiveExercises.jpg" alt="Cognitive Exercises">
+                    <h4>Cognitive Exercises</h4>
+                    <p>Brain training exercises to boost cognitive skills.</p>
+                    <button class="btn-start" onclick="startActivity('Cognitive Exercises')">Start</button>
+                </div>
+            </div>
+            <a href="home.html" class="back-button">Back to Home</a>
+        </div>
+    </div>
+
+    <script>
+        function startActivity(activityName) {
+            alert(`You have started the activity: ${activityName}`);
+        }
+    </script>
+</body>
+</html>
